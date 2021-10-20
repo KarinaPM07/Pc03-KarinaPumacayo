@@ -1,0 +1,73 @@
+@model Pc03_KarinaPumacayo.Models.Contacto
+@{
+    ViewData["Title"] = "Cliente";
+    
+}
+<h1>@ViewData["Title"]</h1>
+<h6>"Por favor complete los datos para registrar su solicitud"</h6>
+<br>
+<!--
+<img src="/images/gta-logo.jpg" height="300px" width="300px"><br/> -->
+<form asp-action="Create">
+  <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+  <div class="form-group">
+    <label name="nombre">Nombre del Producto:</label><br/>
+    <input asp-for="nombre" class="form-control"/><br/>
+    <span asp-validation-for="nombre" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label name="foto">Foto del Producto:</label><br/>
+    <input asp-for="foto" class="form-control"/><br/>
+    <span asp-validation-for="foto" class="text-danger"></span>
+  </div>
+    <div class="form-group">
+    <label name="descripcion">Descripcion de la publicación:</label><br/>
+    <input asp-for="descripcion" class="form-control"/><br/>
+    <span asp-validation-for="descripcion" class="text-danger"></span>
+  </div>
+
+    
+    <div class="form-group">
+    <label name="precio">Precio Producto:</label><br/>
+    <input asp-for="precio" class="form-control"/><br/>
+    <span asp-validation-for="precio" class="text-danger"></span>
+  </div>
+
+  
+    <div class="form-group">
+    <label name="precio">Celular Comprador:</label><br/>
+    <input asp-for="precio" class="form-control"/><br/>
+    <span asp-validation-for="precio" class="text-danger"></span>
+  </div>
+
+  
+    <div class="form-group">
+    <label name="lugar">Lugar de compra :</label><br/>
+    <input asp-for="lugar" class="form-control"/><br/>
+    <span asp-validation-for="lugar" class="text-danger"></span>
+  </div>
+
+    
+    <div class="form-group">
+    <label name="comprador">Nombre del Comprador :</label><br/>
+    <input asp-for="comprador" class="form-control"/><br/>
+    <span asp-validation-for="comprador" class="text-danger"></span>
+  </div>
+
+  <div class="form-group">
+    <label name="categoria">Categoria:</label><br/>
+    <select asp-for="categoria" class="form-control form-control-sm">
+      <option value="Tecnologia">Tecnologia</option>
+        <option value="Arte">Arte</option>
+        <option value="Ropa">Ropa</option>
+        <option value="Muebles del Hogar">Muebles del Hogar</option>
+    </select>
+  </div>
+  
+
+  <input type="submit" value="Enviar" class="btn btn-primary" />
+</form>
+<h1> 
+   <!--@Html.DisplayNameFor(model => model.Mensaje)-->
+    @Html.DisplayFor(model => model.Mensaje)
+</h1>

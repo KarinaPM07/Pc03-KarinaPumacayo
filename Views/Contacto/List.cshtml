@@ -1,0 +1,70 @@
+@model IEnumerable<Pc03_KarinaPumacayo.Models.Contacto>
+
+<h2>Lista de Solicitudes</h2>
+
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+                
+                
+                <th scope="col">
+                    Nombre Producto
+                </th>
+                <th scope="col">
+                    Foto
+                </th>
+                <th scope="col">
+                    Descripcion
+                </th>
+                <th scope="col">
+                    Precio
+                </th>
+                <th scope="col">
+                    Celular
+                </th>
+                <th scope="col">
+                    Lugar de compra
+                </th>
+                <th scope="col">
+                    Nombre Comprador
+                </th>
+                <th scope="col">
+                    Categoria Prod
+                </th>
+        </tr>
+    </thead>
+    <tbody>
+
+@foreach (var item in Model)
+{
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.foto)
+            </td>
+             
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.celular)
+            </td>     
+            <td>
+                @Html.DisplayFor(modelItem => item.lugar)
+            </td>  
+            <td>
+                @Html.DisplayFor(modelItem => item.comprador)
+            </td>  
+            <td>
+                @Html.DisplayFor(modelItem => item.categoria)
+            </td>                                
+        </tr>
+}        
+    </tbody>
+</table>
