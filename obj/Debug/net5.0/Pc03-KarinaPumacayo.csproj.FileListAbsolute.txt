@@ -58,3 +58,4 @@ D:\GitHup_Repositorios\Semana12PC03\Pc03-KarinaPumacayo\obj\Debug\net5.0\Pc03-Ka
 D:\GitHup_Repositorios\Semana12PC03\Pc03-KarinaPumacayo\obj\Debug\net5.0\ref\Pc03-KarinaPumacayo.dll
 D:\GitHup_Repositorios\Semana12PC03\Pc03-KarinaPumacayo\obj\Debug\net5.0\Pc03-KarinaPumacayo.pdb
 D:\GitHup_Repositorios\Semana12PC03\Pc03-KarinaPumacayo\obj\Debug\net5.0\Pc03-KarinaPumacayo.genruntimeconfig.cache
+D:\GitHup_Repositorios\Semana12PC03\Pc03-KarinaPumacayo\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
